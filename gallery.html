@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Hybriq Prime Nig Ltd</title>
+  <meta name="description" content="Browse our project gallery — before and after photos of house painting, POP ceilings, epoxy flooring, and more by Hybriq Prime in Lagos." />
+  <link rel="stylesheet" href="css/style.css" />
+ <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+       <img src="images/logo.png" alt="hybriq logo" height="40px" width="auto" >
+        <div class="nav-logo-text">Hybriq Prime <span>Nig Ltd · Lagos</span></div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-cta btn">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Our <span>Gallery</span></h1>
+    <p>Before & after photos showcasing the quality of our work across Lagos</p>
+    <div class="gold-divider"></div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div style="display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-bottom:2.5rem;" class="reveal">
+        <button class="gallery-filter-btn active" data-filter="all" onclick="filterGallery(this, 'all')">All Projects</button>
+        <button class="gallery-filter-btn" data-filter="painting" onclick="filterGallery(this, 'painting')">Painting</button>
+        <button class="gallery-filter-btn" data-filter="pop" onclick="filterGallery(this, 'pop')">POP Ceiling</button>
+        <button class="gallery-filter-btn" data-filter="epoxy" onclick="filterGallery(this, 'epoxy')">Epoxy Flooring</button>
+        <button class="gallery-filter-btn" data-filter="blinds" onclick="filterGallery(this, 'blinds')">Blinds</button>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img">
+            <img src="images/Before 1.jpg" alt="before 1">
+          </div>
+          <div class="gallery-badge">Before</div>
+          <div class="gallery-overlay"><span>Exterior Painting </span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img">
+            <img src="images/After 1.jpg" alt="before 1">
+          </div>
+          <div class="gallery-badge">after</div>
+          <div class="gallery-overlay"><span>Exterior Painting </span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="pop">
+          <div class="gallery-img"><image src="images/pop ceiling.jpg"></image> </div>
+          <div class="gallery-badge">Completed</div>
+          <div class="gallery-overlay"><span>Decorative POP Ceiling </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="epoxy">
+          <div class="gallery-img"><img src="images/epoxy floor.jpg" ></div>
+          <div class="gallery-badge">completed</div>
+          <div class="gallery-overlay"><span>Epoxy Flooring </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img">
+            <img src="images/paint 1.jpg" alt="exterior painting">
+          </div>
+          <div class="gallery-badge">Completed</div>
+          <div class="gallery-overlay"><span>Full Exterior Painting</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="blinds">
+          <div class="gallery-img"><img src="images/window blind.jpg"></div>
+          <div class="gallery-badge">Installed</div>
+          <div class="gallery-overlay"><span>Roller Blinds </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="wall skimming">
+          <div class="gallery-img"><img src="images/wall skimming.jpg"></div>
+          <div class="gallery-badge">Completed</div>
+          <div class="gallery-overlay"><span>wall skimming </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/before 2.jpg"></div>
+          <div class="gallery-badge">Before </div>
+          <div class="gallery-overlay"><span>exterior painting finish</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/after 2.jpg"></div>
+          <div class="gallery-badge">After</div>
+          <div class="gallery-overlay"><span>Exterior painting finish </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/before 3.jpg"></div>
+          <div class="gallery-badge">Before</div>
+          <div class="gallery-overlay"><span>Exterior painting</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/after 3.jpg"></div>
+          <div class="gallery-badge">Installed</div>
+          <div class="gallery-overlay"><span>Exterior painting </span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/Decorative 1.jpg"></div>
+          <div class="gallery-badge">Decorative Painting</div>
+          <div class="gallery-overlay"><span>Decorative painting</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/Decorative 2.jpg"></div>
+          <div class="gallery-badge">Decorative Painting</div>
+          <div class="gallery-overlay"><span>Decorative painting </span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="painting">
+          <div class="gallery-img"><img src="images/Decorative 3.jpg"></div>
+          <div class="gallery-badge">Decorative Painting</div>
+          <div class="gallery-overlay"><span>Decorative painting </span></div>
+        </div>
+
+      </div>
+
+     
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Love What You See? <span>Let's Work Together.</span></h2>
+      <p>Your home or office could be our next showcase project. Book a free consultation today.</p>
+      <div class="cta-buttons">
+        <a href="booking.html" class="btn btn-primary">📋 Book a Service</a>
+        <a href="https://wa.me/2349051297422" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem; display:inline-flex;">
+          <img src="images/logo.png" alt="hybriq logo" height="40px" width="auto">
+          <div class="nav-logo-text">Hybriq Prime <span>Nig Ltd · Lagos</span></div>
+        </a>
+        <p>Lagos's premier interior finishing company. We paint, skim, install, and coat — with craftsmanship that lasts.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">House Painting</a></li>
+          <li><a href="services.html">Wall Skimming</a></li>
+          <li><a href="services.html">POP Ceiling</a></li>
+          <li><a href="services.html">Epoxy Flooring</a></li>
+          <li><a href="services.html">Window Blinds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Book a Service</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+2349051297422">📞 +234 905 129 7422</a></li>
+          <li><a href="https://wa.me/2349051297422" target="_blank">💬 WhatsApp</a></li>
+          <li><a href="#">📍 Lagos, Nigeria</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="current-year"></span> <span>Hybriq Prime Nig Ltd</span>. All rights reserved.</p>
+      <p>Built with ❤️ in Lagos, Nigeria 🇳🇬</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2349051297422" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+
+  <!-- Gallery-specific styles -->
+  <style>
+    .gallery-filter-btn {
+      padding: 0.5rem 1.1rem;
+      border-radius: 30px;
+      border: 1.5px solid rgba(10,22,40,0.15);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .gallery-filter-btn:hover,
+    .gallery-filter-btn.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-color: var(--gold);
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .gallery-item[style*="display: none"] { display: none !important; }
+  </style>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* Gallery filter function */
+    function filterGallery(btn, category) {
+      // Update active button
+      document.querySelectorAll('.gallery-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Show/hide items
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
