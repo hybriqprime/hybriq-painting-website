@@ -129,7 +129,7 @@ if (bookingForm) {
     const date     = document.getElementById('bDate').value;
 
     // --- Build WhatsApp message ---
-    const wa_number = '2348100000000'; // Replace with real business number
+    const wa_number = '2349051297422'; 
     const message = encodeURIComponent(
       `Hello Hybriq Prime,\n\nI would like to book a service:\n\n` +
       `👤 Name: ${name}\n` +
@@ -140,7 +140,7 @@ if (bookingForm) {
       `Please confirm my booking. Thank you!`
     );
 
-    const waLink = `https://wa.me/${wa_number}?text=${message}`;
+    const waLink = `https://wa.me/${23409051297422}?text=${message}`;
 
     // Store the WhatsApp link for the confirmation button
     document.getElementById('waBookingLink').href = waLink;
@@ -161,9 +161,9 @@ if (contactForm) {
     const name    = document.getElementById('cName').value.trim();
     const message = document.getElementById('cMessage').value.trim();
 
-    const wa_number = '2348100000000'; // Replace with real number
+    const wa_number = '2349051297422'; // Replace with real number
     const waMsg = encodeURIComponent(`Hello Hybriq Prime,\n\nMy name is ${name}.\n\n${message}`);
-    const waLink = `https://wa.me/${wa_number}?text=${waMsg}`;
+    const waLink = `https://wa.me/${2349051297422}?text=${waMsg}`;
 
     // Send directly to WhatsApp
     window.open(waLink, '_blank');
